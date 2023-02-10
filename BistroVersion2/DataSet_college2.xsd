@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet_college2" targetNamespace="http://tempuri.org/DataSet_college2.xsd" xmlns:mstns="http://tempuri.org/DataSet_college2.xsd" xmlns="http://tempuri.org/DataSet_college2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString_college" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString_college (Settings)" PropertyReference="ApplicationSettings.BistroVersion2.Properties.Settings.GlobalReference.Default.ConnectionString_college" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="БлюдаTableAdapter" GeneratorDataComponentClassName="БлюдаTableAdapter" Name="Блюда" UserDataComponentName="БлюдаTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString_college (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT "id_блюда", "Название", "Вид_блюда", "Выход_вес", "Стоимость_блюда" FROM "dbo"."Блюда"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_блюда" DataSetColumn="id_блюда" />
+              <Mapping SourceColumn="Название" DataSetColumn="Название" />
+              <Mapping SourceColumn="Вид_блюда" DataSetColumn="Вид_блюда" />
+              <Mapping SourceColumn="Выход_вес" DataSetColumn="Выход_вес" />
+              <Mapping SourceColumn="Стоимость_блюда" DataSetColumn="Стоимость_блюда" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ПродуктыTableAdapter" GeneratorDataComponentClassName="ПродуктыTableAdapter" Name="Продукты" UserDataComponentName="ПродуктыTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString_college (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT "id_продукта", "Название_продукта", "Калорийность", "Вес_продукта", "Цена_продукта" FROM "dbo"."Продукты"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_продукта" DataSetColumn="id_продукта" />
+              <Mapping SourceColumn="Название_продукта" DataSetColumn="Название_продукта" />
+              <Mapping SourceColumn="Калорийность" DataSetColumn="Калорийность" />
+              <Mapping SourceColumn="Вес_продукта" DataSetColumn="Вес_продукта" />
+              <Mapping SourceColumn="Цена_продукта" DataSetColumn="Цена_продукта" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="рецептыTableAdapter" GeneratorDataComponentClassName="рецептыTableAdapter" Name="рецепты" UserDataComponentName="рецептыTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString_college (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT "id_блюда", "id_продукта", "Время_приготовления", "Рецепт" FROM "dbo"."рецепты"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_блюда" DataSetColumn="id_блюда" />
+              <Mapping SourceColumn="id_продукта" DataSetColumn="id_продукта" />
+              <Mapping SourceColumn="Время_приготовления" DataSetColumn="Время_приготовления" />
+              <Mapping SourceColumn="Рецепт" DataSetColumn="Рецепт" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet_college2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DataSet_college2" msprop:Generator_UserDSName="DataSet_college2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Блюда" msprop:Generator_TableClassName="БлюдаDataTable" msprop:Generator_TableVarName="tableБлюда" msprop:Generator_TablePropName="Блюда" msprop:Generator_RowDeletingName="БлюдаRowDeleting" msprop:Generator_RowChangingName="БлюдаRowChanging" msprop:Generator_RowEvHandlerName="БлюдаRowChangeEventHandler" msprop:Generator_RowDeletedName="БлюдаRowDeleted" msprop:Generator_UserTableName="Блюда" msprop:Generator_RowChangedName="БлюдаRowChanged" msprop:Generator_RowEvArgName="БлюдаRowChangeEvent" msprop:Generator_RowClassName="БлюдаRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_блюда" msprop:Generator_ColumnVarNameInTable="columnid_блюда" msprop:Generator_ColumnPropNameInRow="id_блюда" msprop:Generator_ColumnPropNameInTable="id_блюдаColumn" msprop:Generator_UserColumnName="id_блюда" type="xs:int" />
+              <xs:element name="Название" msprop:Generator_ColumnVarNameInTable="columnНазвание" msprop:Generator_ColumnPropNameInRow="Название" msprop:Generator_ColumnPropNameInTable="НазваниеColumn" msprop:Generator_UserColumnName="Название" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Вид_блюда" msprop:Generator_ColumnVarNameInTable="columnВид_блюда" msprop:Generator_ColumnPropNameInRow="Вид_блюда" msprop:Generator_ColumnPropNameInTable="Вид_блюдаColumn" msprop:Generator_UserColumnName="Вид_блюда" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Выход_вес" msprop:Generator_ColumnVarNameInTable="columnВыход_вес" msprop:Generator_ColumnPropNameInRow="Выход_вес" msprop:Generator_ColumnPropNameInTable="Выход_весColumn" msprop:Generator_UserColumnName="Выход_вес" type="xs:int" minOccurs="0" />
+              <xs:element name="Стоимость_блюда" msprop:Generator_ColumnVarNameInTable="columnСтоимость_блюда" msprop:Generator_ColumnPropNameInRow="Стоимость_блюда" msprop:Generator_ColumnPropNameInTable="Стоимость_блюдаColumn" msprop:Generator_UserColumnName="Стоимость_блюда" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Продукты" msprop:Generator_TableClassName="ПродуктыDataTable" msprop:Generator_TableVarName="tableПродукты" msprop:Generator_TablePropName="Продукты" msprop:Generator_RowDeletingName="ПродуктыRowDeleting" msprop:Generator_RowChangingName="ПродуктыRowChanging" msprop:Generator_RowEvHandlerName="ПродуктыRowChangeEventHandler" msprop:Generator_RowDeletedName="ПродуктыRowDeleted" msprop:Generator_UserTableName="Продукты" msprop:Generator_RowChangedName="ПродуктыRowChanged" msprop:Generator_RowEvArgName="ПродуктыRowChangeEvent" msprop:Generator_RowClassName="ПродуктыRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_продукта" msprop:Generator_ColumnVarNameInTable="columnid_продукта" msprop:Generator_ColumnPropNameInRow="id_продукта" msprop:Generator_ColumnPropNameInTable="id_продуктаColumn" msprop:Generator_UserColumnName="id_продукта" type="xs:int" />
+              <xs:element name="Название_продукта" msprop:Generator_ColumnVarNameInTable="columnНазвание_продукта" msprop:Generator_ColumnPropNameInRow="Название_продукта" msprop:Generator_ColumnPropNameInTable="Название_продуктаColumn" msprop:Generator_UserColumnName="Название_продукта" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Калорийность" msprop:Generator_ColumnVarNameInTable="columnКалорийность" msprop:Generator_ColumnPropNameInRow="Калорийность" msprop:Generator_ColumnPropNameInTable="КалорийностьColumn" msprop:Generator_UserColumnName="Калорийность" type="xs:double" minOccurs="0" />
+              <xs:element name="Вес_продукта" msprop:Generator_ColumnVarNameInTable="columnВес_продукта" msprop:Generator_ColumnPropNameInRow="Вес_продукта" msprop:Generator_ColumnPropNameInTable="Вес_продуктаColumn" msprop:Generator_UserColumnName="Вес_продукта" type="xs:double" minOccurs="0" />
+              <xs:element name="Цена_продукта" msprop:Generator_ColumnVarNameInTable="columnЦена_продукта" msprop:Generator_ColumnPropNameInRow="Цена_продукта" msprop:Generator_ColumnPropNameInTable="Цена_продуктаColumn" msprop:Generator_UserColumnName="Цена_продукта" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="рецепты" msprop:Generator_TableClassName="рецептыDataTable" msprop:Generator_TableVarName="tableрецепты" msprop:Generator_TablePropName="рецепты" msprop:Generator_RowDeletingName="рецептыRowDeleting" msprop:Generator_RowChangingName="рецептыRowChanging" msprop:Generator_RowEvHandlerName="рецептыRowChangeEventHandler" msprop:Generator_RowDeletedName="рецептыRowDeleted" msprop:Generator_UserTableName="рецепты" msprop:Generator_RowChangedName="рецептыRowChanged" msprop:Generator_RowEvArgName="рецептыRowChangeEvent" msprop:Generator_RowClassName="рецептыRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_блюда" msprop:Generator_ColumnVarNameInTable="columnid_блюда" msprop:Generator_ColumnPropNameInRow="id_блюда" msprop:Generator_ColumnPropNameInTable="id_блюдаColumn" msprop:Generator_UserColumnName="id_блюда" type="xs:int" />
+              <xs:element name="id_продукта" msprop:Generator_ColumnVarNameInTable="columnid_продукта" msprop:Generator_ColumnPropNameInRow="id_продукта" msprop:Generator_ColumnPropNameInTable="id_продуктаColumn" msprop:Generator_UserColumnName="id_продукта" type="xs:int" />
+              <xs:element name="Время_приготовления" msprop:Generator_ColumnVarNameInTable="columnВремя_приготовления" msprop:Generator_ColumnPropNameInRow="Время_приготовления" msprop:Generator_ColumnPropNameInTable="Время_приготовленияColumn" msprop:Generator_UserColumnName="Время_приготовления" type="xs:int" minOccurs="0" />
+              <xs:element name="Рецепт" msprop:Generator_ColumnVarNameInTable="columnРецепт" msprop:Generator_ColumnPropNameInRow="Рецепт" msprop:Generator_ColumnPropNameInTable="РецептColumn" msprop:Generator_UserColumnName="Рецепт" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Блюда" />
+      <xs:field xpath="mstns:id_блюда" />
+    </xs:unique>
+    <xs:unique name="Продукты_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Продукты" />
+      <xs:field xpath="mstns:id_продукта" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
